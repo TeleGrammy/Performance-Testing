@@ -5,13 +5,13 @@ const BASE_URL = 'https://telegrammy.tech/api/v1';
 
 export const options = {
     stages: [
-        { duration: '1m', target: 200 }, // ramp up
-        { duration: '5m', target: 200 }, // stable
-        { duration: '1m', target: 800 }, // ramp up
-        { duration: '5m', target: 800 }, // stable
-        { duration: '1m', target: 1000 }, // ramp up
-        { duration: '5m', target: 1000 }, // stable
-        { duration: '5m', target: 0 }, // ramp-down to 0 users
+        { duration: '10s', target: 1000 }, // ramp up
+        { duration: '2m', target: 1000 }, // stable
+        { duration: '20s', target: 5000 }, // ramp up
+        { duration: '2m', target: 5000 }, // stable
+        { duration: '30s', target: 10000 }, // ramp up
+        { duration: '2m', target: 10000 }, // stable
+        { duration: '1m', target: 0 }, // ramp-down to 0 users
     ],
 };
 function generateRandomToken() {

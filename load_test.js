@@ -5,12 +5,12 @@ const BASE_URL = 'https://telegrammy.tech/api/v1';
 
 export const options = {
     stages: [
-        { duration: "5s", target: 20 },
-        { duration: "1m", target: 20 },
+        { duration: "5s", target: 500 },
+        { duration: "1m", target: 500 },
         { duration: "5s", target: 0 },
     ],
     thresholds: {
-        http_req_duration: ["p(80)<100"],
+        http_req_duration: ["p(80)<1000"],
     },
 };
 
